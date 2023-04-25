@@ -5,7 +5,7 @@ This is a preview of the repository.  The full code will be puplished once the p
 
 
 ## About
-This code demonstrates the numerical solution of the linear inhomogeneous Cauchy problem with [Caputo fractional derivative] (https://en.wikipedia.org/wiki/Fractional_calculus#Caputo_fractional_derivative) in-time and second order elliptic partial differential operator coefficient in-space, defined on the finite 1D interval and accompanied by the zero Dirichlet boundary conditions. 
+This code demonstrates the numerical solution of the linear inhomogeneous Cauchy problem with [Caputo fractional derivative](https://en.wikipedia.org/wiki/Fractional_calculus#Caputo_fractional_derivative) in-time and second order elliptic partial differential operator coefficient in-space, defined on the finite 1D interval and accompanied by the zero Dirichlet boundary conditions. 
 It uses an implementation of the method developed in the paper  
 
 [1] **D. Sytnyk, B. Wohlmuth** *Exponentially convergent numerical method for abstract Cauchy problem with fractional derivative of Caputo type.* Mathematics 2023, 1, 0. https://doi.org/. 
