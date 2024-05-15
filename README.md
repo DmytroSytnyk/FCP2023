@@ -77,13 +77,29 @@ In some cases, examples (might be outdated) and citations are also provided.
 
 ## Example results
 ### Semi-discretized linear homogeneous problem from Example 1
-![Exact solution](figures/cauchy_hom_sol_err_vs_t1.png)
-![Approximate solution N = 8](figures/cauchy_hom_sol_err_vs_t2.png)
+![Exact solution](figures/cauchy_hom_sol_err_vs_t1.png) 
+<!--
+<img src="figures/cauchy_hom_sol_err_vs_t1.png" alt="Exact solution" width="90%">
+ 
+<div align="center">
+<img src="figures/cauchy_hom_sol_err_vs_t2.png" alt="Approximate solution N = 8" width="45%"> 
+<img src="figures/cauchy_hom_sol_err_vs_t3.png" alt="Approximate solution N = 16" width="45%"> 
+</div>
+<div align="center">
+<img src="figures/cauchy_hom_sol_err_vs_t4.png" alt="Approximate solution N = 32" width="45%"> 
+<img src="figures/cauchy_hom_sol_err_vs_t5.png" alt="Approximate solution N = 64" width="45%"> 
+</div>
+<div align="center">
+<img src="figures/cauchy_hom_sol_err_vs_t6.png" alt="Approximate solution N = 128" width="45%"> 
+<img src="figures/cauchy_hom_sol_err_vs_t7.png" alt="Approximate solution N = 256" width="45%"> 
+</div>  -->
+![Approximate solution N = 8](figures/cauchy_hom_sol_err_vs_t2.png) 
 ![Approximate solution N = 16](figures/cauchy_hom_sol_err_vs_t3.png)
 ![Approximate solution N = 32](figures/cauchy_hom_sol_err_vs_t4.png)
 ![Approximate solution N = 64](figures/cauchy_hom_sol_err_vs_t5.png)
 ![Approximate solution N = 128](figures/cauchy_hom_sol_err_vs_t6.png)
 ![Approximate solution N = 256](figures/cauchy_hom_sol_err_vs_t7.png)
+
 ![Error N = 8](figures/cauchy_hom_sol_err_vs_t10.png)
 ![Error N = 16](figures/cauchy_hom_sol_err_vs_t11.png)
 ![Error N = 32](figures/cauchy_hom_sol_err_vs_t12.png)
@@ -95,9 +111,11 @@ In some cases, examples (might be outdated) and citations are also provided.
 
 ### Semi-discretized linear inhomogeneous problem with zero homogeneous part (Example 2)
 ![Exact solution](figures/cauchy_inhom_sol_err_vs_t1.png)
+
 ![Approximate solution N = 32](figures/cauchy_inhom_sol_err_vs_t2.png)
 ![Approximate solution N = 64](figures/cauchy_inhom_sol_err_vs_t3.png)
 ![Approximate solution N = 128](figures/cauchy_inhom_sol_err_vs_t4.png)
+
 ![Error N = 32](figures/cauchy_inhom_sol_err_vs_t5.png)
 ![Error N = 64](figures/cauchy_inhom_sol_err_vs_t6.png)
 ![Error N = 128](figures/cauchy_inhom_sol_err_vs_t7.png)
@@ -109,6 +127,7 @@ In some cases, examples (might be outdated) and citations are also provided.
 ![Approximate solution N = 64](figures/cauchy_fully_discretized_sol_err_vs_t4.png)
 ![Approximate solution N = 128](figures/cauchy_fully_discretized_sol_err_vs_t5.png)
 ![Approximate solution N = 256](figures/cauchy_fully_discretized_sol_err_vs_t6.png)
+
 ![Error N = 16](figures/cauchy_fully_discretized_sol_err_vs_t7.png)
 ![Error N = 32](figures/cauchy_fully_discretized_sol_err_vs_t8.png)
 ![Error N = 64](figures/cauchy_fully_discretized_sol_err_vs_t9.png)
