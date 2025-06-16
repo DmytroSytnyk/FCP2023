@@ -1,7 +1,5 @@
 Numerical solution of inhomogeneous fractional Cauchy problem 
 ==========================================
-**Note:**
-This is a preview of the repository.  The full code will be puplished once the paper is available online.
 
 
 ## About
