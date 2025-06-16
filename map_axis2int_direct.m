@@ -9,7 +9,7 @@ function [y] = map_axis2int_direct(a,b,x)
 %OUTPUT:
 % y - vector of images of x that lie on [a, b]
 %
-% Copyright (C) 2022, Dmytro Sytnyk. All rights reserved. 
+% Copyright (C) 2022-2025, Dmytro Sytnyk. All rights reserved. 
 
 %% Function body
 % y = a + (b-a)*exp(x)./(1 + exp(x));

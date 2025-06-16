@@ -12,6 +12,8 @@ function [r] = quad_SQ_int_h(vf, vx, a, b, N, h)
 %
 %OUTPUT:
 % r  - result of the quadrature (matrix with the size size(vf,1)xnumel(vx))
+%
+% Copyright (C) 2022-2025, Dmytro Sytnyk. All rights reserved. 
 
 %% Parse input arguments
 if (size(vf,2) ~= 2*N+1) || (size(vx,2) ~= 2*N +1)

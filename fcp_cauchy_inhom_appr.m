@@ -60,7 +60,7 @@ function [fcp_prop_t, Sf0, Sf0_matr_func] = fcp_cauchy_inhom_appr(t, fcp, f0_res
 %                 points used to approximate propagator Sdf. 
 %                 See cauchy_int_matr_func for details.
 %
-% Copyright (C) 2022, Dmytro Sytnyk. All rights reserved. 
+% Copyright (C) 2022-2025, Dmytro Sytnyk. All rights reserved. 
 
 %% Parse input parameters
 if (nargin == 7)
