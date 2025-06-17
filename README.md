@@ -52,7 +52,7 @@ We advice to invoke the parallel mode only with Example 3, when the space-grid s
 All user-facing functionality is provided by the 6 top-level run scripts mentioned above.
 These are self sufficient. 
 The routines from `fcp_cauchy_hom_ex_sol_eigenfunction.m` and `fcp_cauchy_inhom_ex_sol_eigenfunction.m` are dependent on the function `ml` from the `contrib` folder. 
-This function is develeoped and maintained by [Roberto Garrappa](https://www.mathworks.com/matlabcentral/fileexchange/48154-the-mittag-leffler-function?tab=reviews%2F1965593). 
+This function is developed and maintained by [Roberto Garrappa](https://www.mathworks.com/matlabcentral/fileexchange/48154-the-mittag-leffler-function?tab=reviews%2F1965593). 
 To setup the path to `ml` for the use with the mentioned (or dependent) routines please run the `environment` script first.
 
 Other routines in the code are as follows:
@@ -60,7 +60,7 @@ Other routines in the code are as follows:
   - functions that start with `fcp_` are related to the top-level fractional Cauchy problem evaluation routines.
   - function `cauchy_int_matr_func` performs the Cauchy integral approximation. Most of the computations needed to numerically evaluate the values of the propagator function is done here. 
   - functions with `map_` and `quad_` prefixes are related to the quadrature evaluation routines.
-  - the file `RLI_approx.m` contains the routines for the approximate evaluation of Rieman-Liouville integral.
+  - the file `RLI_approx.m` contains the routines for the approximate evaluation of Riemann-Liouville integral.
   - the routines from files with `resolvent_` prefix are responsible for problem-dependent evaluation of the stationary operator's resolvent. 
   - files `helper_*.m` and `plot_*.m` contain auxiliary routines for plotting and postprocessing  
 
@@ -69,66 +69,46 @@ The implementation of propagator approximation is separated from the routines re
 As such, the current codebase can be easily extended to handle fractional Cauchy problem with different stationary operators.
 This can be achieved by providing new `resolvent_` m-files.
 
-## Documentations
+## Documentation
 All non-trivial functions have the documentation included in the comments at the beginning of the file.
 In some cases, examples (might be outdated) and citations are also provided.
 
 ## Example results
-### Semi-discretized linear homogeneous problem from Example 1
-![Exact solution](figures/cauchy_hom_sol_err_vs_t1.png) 
-<!--
-<img src="figures/cauchy_hom_sol_err_vs_t1.png" alt="Exact solution" width="90%">
- 
+Following plots illustrate the typical error behavior of the proposed numerical method with respect $ \alpha,N $
+![Supremum error of numerical solution to the homogeneous Cauchy problem](figures/cauchy_hom_sol_err_vs_N.svg) 
 <div align="center">
-<img src="figures/cauchy_hom_sol_err_vs_t2.png" alt="Approximate solution N = 8" width="45%"> 
-<img src="figures/cauchy_hom_sol_err_vs_t3.png" alt="Approximate solution N = 16" width="45%"> 
-</div>
-<div align="center">
-<img src="figures/cauchy_hom_sol_err_vs_t4.png" alt="Approximate solution N = 32" width="45%"> 
-<img src="figures/cauchy_hom_sol_err_vs_t5.png" alt="Approximate solution N = 64" width="45%"> 
-</div>
-<div align="center">
-<img src="figures/cauchy_hom_sol_err_vs_t6.png" alt="Approximate solution N = 128" width="45%"> 
-<img src="figures/cauchy_hom_sol_err_vs_t7.png" alt="Approximate solution N = 256" width="45%"> 
-</div>  -->
-![Approximate solution N = 8](figures/cauchy_hom_sol_err_vs_t2.png) 
-![Approximate solution N = 16](figures/cauchy_hom_sol_err_vs_t3.png)
-![Approximate solution N = 32](figures/cauchy_hom_sol_err_vs_t4.png)
-![Approximate solution N = 64](figures/cauchy_hom_sol_err_vs_t5.png)
-![Approximate solution N = 128](figures/cauchy_hom_sol_err_vs_t6.png)
-![Approximate solution N = 256](figures/cauchy_hom_sol_err_vs_t7.png)
+<img src="figures/cauchy_inhom_sol_err_vs_N_alpha_0_1.svg" alt="Supremum error of numerical solution to the ihhomogeneous Cauchy problem (alpha <= 1)" width="100%"> 
+<img src="figures/cauchy_inhom_sol_err_vs_N_alpha_1_2.svg" alt="Supremum error of numerical solution to the ihhomogeneous Cauchy problem (alpha >= 1)" width="100%"> 
+</div>  
 
-![Error N = 8](figures/cauchy_hom_sol_err_vs_t10.png)
-![Error N = 16](figures/cauchy_hom_sol_err_vs_t11.png)
-![Error N = 32](figures/cauchy_hom_sol_err_vs_t12.png)
-![Error N = 64](figures/cauchy_hom_sol_err_vs_t13.png)
-![Error N = 128](figures/cauchy_hom_sol_err_vs_t14.png)
-![Error N = 256](figures/cauchy_hom_sol_err_vs_t15.png)
-![Error N = 512](figures/cauchy_hom_sol_err_vs_t16.png)
-![Error N = 1024](figures/cauchy_hom_sol_err_vs_t17.png)
+## Citation
+```bib
+@Article{Sytnyk2023,
+  author           = {Sytnyk, Dmytro and Wohlmuth, Barbara},
+  journal          = {Mathematics},
+  title            = {{Exponentially Convergent Numerical Method for Abstract Cauchy Problem with Fractional Derivative of Caputo Type}},
+  year             = {2023},
+  issn             = {2227-7390},
+  month            = may,
+  number           = {10},
+  pages            = {2312},
+  volume           = {11},
+  article-number   = {2312},
+  doi              = {10.3390/math11102312},
+  language         = {english},
+  publisher        = {MDPI AG}
+}
+```
 
-### Semi-discretized linear inhomogeneous problem with zero homogeneous part (Example 2)
-![Exact solution](figures/cauchy_inhom_sol_err_vs_t1.png)
+## Reporting Issues
 
-![Approximate solution N = 32](figures/cauchy_inhom_sol_err_vs_t2.png)
-![Approximate solution N = 64](figures/cauchy_inhom_sol_err_vs_t3.png)
-![Approximate solution N = 128](figures/cauchy_inhom_sol_err_vs_t4.png)
+Please use the GitHub [issue tracker](https://github.com/DmytroSytnyk/FCP2023/issues)
+for any bugs or feature suggestions.
 
-![Error N = 32](figures/cauchy_inhom_sol_err_vs_t5.png)
-![Error N = 64](figures/cauchy_inhom_sol_err_vs_t6.png)
-![Error N = 128](figures/cauchy_inhom_sol_err_vs_t7.png)
 
-### Fully-discretized linear inhomogeneous problem with non-stationary right-hand side from Example 3
-![Exact solution](figures/cauchy_fully_discretized_sol_err_vs_t1.png)
-![Approximate solution N = 16](figures/cauchy_fully_discretized_sol_err_vs_t2.png)
-![Approximate solution N = 32](figures/cauchy_fully_discretized_sol_err_vs_t3.png)
-![Approximate solution N = 64](figures/cauchy_fully_discretized_sol_err_vs_t4.png)
-![Approximate solution N = 128](figures/cauchy_fully_discretized_sol_err_vs_t5.png)
-![Approximate solution N = 256](figures/cauchy_fully_discretized_sol_err_vs_t6.png)
+## Copyright
 
-![Error N = 16](figures/cauchy_fully_discretized_sol_err_vs_t7.png)
-![Error N = 32](figures/cauchy_fully_discretized_sol_err_vs_t8.png)
-![Error N = 64](figures/cauchy_fully_discretized_sol_err_vs_t9.png)
-![Error N = 128](figures/cauchy_fully_discretized_sol_err_vs_t10.png)
-![Error N = 256](figures/cauchy_fully_discretized_sol_err_vs_t11.png)
+The original code is licensed under the GPL-3.0 license.
+A copy of this license is included in the file LICENSE.
 
+The code inside `contrib` folder is licensed under separate license(s).
