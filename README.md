@@ -74,7 +74,7 @@ All non-trivial functions have the documentation included in the comments at the
 In some cases, examples (might be outdated) and citations are also provided.
 
 ## Example results
-Following plots illustrate the typical error behavior of the proposed numerical method with respect $ \alpha,N $
+Following plots illustrate the typical error behavior of the proposed numerical method with respect $`\alpha,N`$
 ![Supremum error of numerical solution to the homogeneous Cauchy problem](figures/cauchy_hom_sol_err_vs_N.svg) 
 <div align="center">
 <img src="figures/cauchy_inhom_sol_err_vs_N_alpha_0_1.svg" alt="Supremum error of numerical solution to the ihhomogeneous Cauchy problem (alpha <= 1)" width="100%"> 
